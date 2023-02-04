@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <style>
+        #zzz{
+            display: flex;
+            border: 2px solid red;
+        }
+        #btn{
+            flex: 1;
+            background-color: gray;
+            height: 500px;
+        }
+        #btn button{
+            padding: 10px 20px;
+            width: 80%;
+            margin: 30px;
+            background-color: green;
+            font-size: 20px;
+            border: none;
+        }
+        #data{
+            flex: 3;
+            background-color: blue;
+            height: 500px;
+        }
+        #about_data{
+            text-align: center;
+        }
+        #about_data img{
+            margin-left: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="zzz">
+        <aside id="btn">
+            <button id="home">Home</button><br>
+            <button id="about">About</button><br>
+            <button id="service">Service</button><br>
+            <button id="login">Login</button>
+        </aside>
+        <div id="data">
+            <div id="home_data">
+                <h1>Home page</h1>
+                <p></p>
+            </div>
+            <div id="about_data">
+                <h1>About page</h1>
+                <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" alt="" height="300" width="300">
+                <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg" alt="" height="300" width="300">
+                <img src="https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg" alt="" height="300" width="300">
+            </div>
+            <div id="service_data">
+                <h1>Service page</h1>
+                <h2>Service page</h2>
+                <h3>Service page</h3>
+                <h4>Service page</h4>
+                <h5>Service page</h5>
+                <h6>Service page</h6>
+            </div>
+            <div id="login_data">
+                <h1>Login page</h1>
+                <form>
+                    <input type="text" name="uname" id="" placeholder="Enter username">
+                    <input type="password" name="pwd" id="" placeholder="Enter password">
+                    <input type="submit" name="" id="" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        $('#home_data').hide();
+        $('#about_data').hide();
+        $('#service_data').hide();
+        $('#login_data').hide();
+
+        $('#home').click(function(){
+            $('#home_data').show();
+            $('#about_data').hide();
+            $('#service_data').hide();
+            $('#login_data').hide();
+        })
+
+        $('#about').click(function(){
+            $('#home_data').hide();
+            $('#about_data').show();
+            $('#service_data').hide();
+            $('#login_data').hide();
+        })
+
+        $('#service').click(function(){
+            $('#home_data').hide();
+            $('#about_data').hide();
+            $('#service_data').show();
+            $('#login_data').hide();
+        })
+
+        $('#login').click(function(){
+            $('#home_data').hide();
+            $('#about_data').hide();
+            $('#service_data').hide();
+            $('#login_data').show();
+        })
+
+    </script>
+
+
+    
+</body>
+</html>
